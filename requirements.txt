@@ -1,0 +1,16 @@
+# This project was developed and run on Google Colab, which preinstalls
+# PyTorch, pandas, matplotlib, and numpy. The versions below reflect the
+# Colab runtime environment used for all reported results. If running outside
+# Colab, install these explicitly.
+
+torch>=2.5.0
+pandas>=2.0.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+pyarrow>=14.0.0
+
+# pyarrow is required by pandas for reading the Parquet files that DailyDialog
+# and BLiMP are downloaded as. No other packages are required: datasets are
+# fetched directly over HTTPS with urllib (standard library), not through the
+# `datasets` library, to avoid a loading-script compatibility issue described
+# in the README.
